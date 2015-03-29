@@ -1,0 +1,627 @@
+Plug and Play BIOS Data scanner, Version 0.14á By Craig Hart 1997,8
+
+Plug 'n Play BIOS : Yes, v1.0
+Num System nodes  : 15
+Largest node size : 69 bytes
+BIOS entry point  : F000:BE00h
+Report for        : Current Boot
+
+------------------------------------------------------------------------------
+Device          : 0, size : 37, Handle : 0
+PnP Device ID   : PNP0000 - AT Interrupt Controller
+BaseType        : 8 - System Peripheral
+SubType         : 0 - Interrupt controller
+InterfaceType   : 0
+DevAttribs      : 00000000 00000011
+IRQ(s)          : 2 
+I/O Range       : 0020h to 0021h
+I/O Range       : 00A0h to 00A1h
+End tag
+------------------------------------------------------------------------------
+Device          : 1, size : 69, Handle : 1
+PnP Device ID   : PNP0200 - AT DMA Controller
+BaseType        : 8 - System Peripheral
+SubType         : 1 - DMA controller
+InterfaceType   : 0
+DevAttribs      : 00000000 00000011
+DMA(s)          : 4 - DMA Type 8237 Reserved 8 bit transfers
+I/O Range       : 0000h to 000Fh
+I/O Range       : 0081h to 0083h
+I/O Port        : 0087h
+I/O Range       : 0089h to 008Bh
+I/O Range       : 008Fh to 0091h
+I/O Range       : 00C0h to 00DFh
+End tag
+------------------------------------------------------------------------------
+Device          : 2, size : 29, Handle : 2
+PnP Device ID   : PNP0100 - AT Timer
+BaseType        : 8 - System Peripheral
+SubType         : 2 - System timer
+InterfaceType   : 1
+DevAttribs      : 00000000 00000011
+IRQ(s)          : 0 
+I/O Range       : 0040h to 0043h
+End tag
+------------------------------------------------------------------------------
+Device          : 3, size : 29, Handle : 3
+PnP Device ID   : PNP0B00 - AT Real-Time Clock
+BaseType        : 8 - System Peripheral
+SubType         : 3 - Real Time Clock
+InterfaceType   : 0
+DevAttribs      : 00000000 00000011
+IRQ(s)          : 8 
+I/O Range       : 0070h to 0071h
+End tag
+------------------------------------------------------------------------------
+Device          : 4, size : 37, Handle : 4
+PnP Device ID   : PNP0303 - IBM Enhanced keyboard controller (101/2-key)
+BaseType        : 9 - Input Device
+SubType         : 0 - Keyboard Controller
+InterfaceType   : 0
+DevAttribs      : 00000000 00001011
+IRQ(s)          : 1 
+I/O Port        : 0060h
+I/O Port        : 0064h
+End tag
+------------------------------------------------------------------------------
+Device          : 5, size : 26, Handle : 5
+PnP Device ID   : PNP0800 - AT standard speaker sound
+BaseType        : 8 - System Peripheral
+SubType         : 128 - Other System device
+InterfaceType   : 0
+DevAttribs      : 00000000 00000011
+I/O Port        : 0061h
+End tag
+------------------------------------------------------------------------------
+Device          : 6, size : 29, Handle : 6
+PnP Device ID   : PNP0C04 - Math Coprocessor
+BaseType        : 11 - CPU Type
+SubType         : 1 - 486 CPU
+InterfaceType   : 0
+DevAttribs      : 00000000 00000011
+IRQ(s)          : 13 
+I/O Range       : 00F0h to 00FFh
+End tag
+------------------------------------------------------------------------------
+Device          : 7, size : 54, Handle : 7
+PnP Device ID   : PNP0C01 - System Board
+BaseType        : 5 - Memory
+SubType         : 0 - RAM Memory
+InterfaceType   : 0
+DevAttribs      : 00000000 00000011
+Memory          : Base 00000000h Length 000A0000h 8 bit
+Memory          : Base FFFE0000h Length 00020000h 8+16 bit ExpROM ROM
+Memory          : Base 00100000h Length 02F00000h 8 bit
+End tag
+------------------------------------------------------------------------------
+Device          : 8, size : 66, Handle : 8
+PnP Device ID   : PNP0C02 - Motherboard registers
+BaseType        : 8 - System Peripheral
+SubType         : 128 - Other System device
+InterfaceType   : 0
+DevAttribs      : 00000000 00000011
+Memory          : Base 000F0000h Length 00004000h ShadowOK 8+16 bit ExpROM ROM
+Memory          : Base 000F4000h Length 00004000h ShadowOK 8+16 bit ExpROM ROM
+Memory          : Base 000F8000h Length 00004000h ShadowOK 8+16 bit ExpROM ROM
+Memory          : Base 000FC000h Length 00004000h ShadowOK 8+16 bit ExpROM ROM
+End tag
+------------------------------------------------------------------------------
+Device          : 9, size : 58, Handle : 9
+PnP Device ID   : PNP0A03 - PCI Bus
+BaseType        : 6 - Bridge Controller
+SubType         : 4 - PCI Bridge
+InterfaceType   : 0
+DevAttribs      : 00000000 00000011
+I/O Range       : 04D0h to 04D1h
+I/O Range       : 0CF8h to 0CFFh
+I/O Range       : 0480h to 048Fh
+I/O Range       : 4000h to 403Fh
+I/O Range       : 5000h to 501Fh
+End tag
+------------------------------------------------------------------------------
+Device          : 10, size : 26, Handle : 11
+PnP Device ID   : PNP0C02 - Motherboard registers
+BaseType        : 8 - System Peripheral
+SubType         : 128 - Other System device
+InterfaceType   : 0
+DevAttribs      : 00000000 00000011
+I/O Range       : 0208h to 020Fh
+End tag
+------------------------------------------------------------------------------
+Device          : 11, size : 69, Handle : 12
+PnP Device ID   : PNP0501 - 16550A-compatible COM port
+BaseType        : 7 - Communications
+SubType         : 0 - RS-232 Serial port
+InterfaceType   : 2
+DevAttribs      : 00000001 10000000
+IRQ(s)          : 4 
+I/O Range       : 03F8h to 03FFh
+End tag
+IRQ(s)          : 3 4 5 7 
+Alternate config start
+I/O Range       : 03F8h to 03FFh
+Alternate config start
+I/O Range       : 02F8h to 02FFh
+Alternate config start
+I/O Range       : 03E8h to 03EFh
+Alternate config start
+I/O Range       : 02E8h to 02EFh
+Alternate config end
+End tag
+End tag
+------------------------------------------------------------------------------
+Device          : 12, size : 48, Handle : 13
+PnP Device ID   : PNP0700 - PC standard floppy disk controller
+BaseType        : 1 - Mass Storage
+SubType         : 2 - Floppy Controller
+InterfaceType   : 0
+DevAttribs      : 00000000 00000011
+DMA(s)          : 2 - DMA Type 8237 Reserved 8 bit transfers
+I/O Range       : 03F2h to 03F5h
+IRQ(s)          : 6 
+End tag
+------------------------------------------------------------------------------
+Device          : 13, size : 60, Handle : 14
+PnP Device ID   : PNP0400 - Standard LPT printer port
+BaseType        : 7 - Communications
+SubType         : 1 - AT Parallel port
+InterfaceType   : 0
+DevAttribs      : 00000001 10000000
+IRQ(s)          : 7 
+I/O Range       : 0378h to 037Fh
+End tag
+IRQ(s)          : 3 4 5 7 
+Alternate config start
+I/O Range       : 0378h to 037Fh
+Alternate config start
+I/O Range       : 0278h to 027Fh
+Alternate config start
+I/O Range       : 03BCh to 03BFh
+Alternate config end
+End tag
+End tag
+------------------------------------------------------------------------------
+Device          : 14, size : 69, Handle : 16
+PnP Device ID   : PNP0501 - 16550A-compatible COM port
+BaseType        : 7 - Communications
+SubType         : 0 - RS-232 Serial port
+InterfaceType   : 2
+DevAttribs      : 00000001 10000000
+IRQ(s)          : 3 
+I/O Range       : 02F8h to 02FFh
+End tag
+IRQ(s)          : 3 4 5 7 
+Alternate config start
+I/O Range       : 03F8h to 03FFh
+Alternate config start
+I/O Range       : 02F8h to 02FFh
+Alternate config start
+I/O Range       : 03E8h to 03EFh
+Alternate config start
+I/O Range       : 02E8h to 02EFh
+Alternate config end
+End tag
+End tag
+
+
+
+Plug 'n Play ISA Configuration
+
+Revision        : 1
+CSN's (Cards)   : 1
+ISA read port   : 020Bh
+
+------------------------------------------------------------------------------
+Possible configuration(s) for Card #1
+
+PnPISA Device ID: TCM5090 - 3Com EtherLink III ISA (3C509-TP)
+Serial#         : AFE6A743h
+Version         : 01h; Revision : 00h
+ID String       : 3Com 3C509B EtherLink III
+LogicalDevID    : TCM5090 - 3Com EtherLink III ISA (3C509-TP)
+CompatableDevID : PNP80F7 - 3Com EtherLink III
+IRQ(s)          : 3 5 7 9 10 11 12 15 
+I/O Range       : Min 0210h max 03E0h step 10h length 10h
+End tag
+
+Logical devices : 1
+
+
+Current configuration
+
+--- Logical Device 0 ---
+Enabled : Yes
+IRQ #1  : 9, Edge triggered, L->H
+I/O #0  : 0280h
+
+
+
+
+Static Resource Configuration
+
+Returned error code : 008Dh - Refer to ESCD information instead!
+
+
+
+ESCD Information
+
+ESCD Size      : 4096
+Min ESCD Size  : 16384
+NVStorBase     : FFFFA000h
+
+Signature      : ACFG
+Version        : 02.01
+Board Count    : 6
+Size           : 022Fh
+
+------------------------------------------------------------------------------
+Slot #01h EISA, PnPISA or ISA Adapter Size : 0038h
+
+(Hex-dump of ESCD data for this device follows)
+38 00 01 00 50 6D 50 90 40 44 00 00 08 00 01 00 94 09 00 0F 80 02 1C 00 01 
+00 C0 18 41 43 46 47 01 02 10 00 00 00 00 00 00 00 00 00 50 6D 50 90 43 A7 
+E6 AF 00 00 3A F6 
+
+EISA ID   : TCM5090 - 3Com EtherLink III ISA (3C509-TP)
+Slot Info : 40h, 44h
+CFG Revn  : 0.0
+
+
+-- Function 0 -----------------------
+
+Length  : 0008h
+Fn info : 94h
+(This entry is disabled)
+IRQ     : 9, Edge Triggered, Not Shared
+I/O     : 0280h to 028Fh, Not Shared
+
+-- Function 1 -----------------------
+
+Length  : 001Ch
+Fn info : C0h
+(This entry is disabled)
+(This entry is really freeform data)
+
+-- Last Function -- Checksum 3AF6h --
+
+
+-- Freeform board header found for this device --
+
+    Signature  : ACFG
+    Version    : 2.1
+    DeviceType : PnPISA
+    DeviceID   : TCM5090 - 3Com EtherLink III ISA (3C509-TP)
+    Serial#    : AFE6A743h
+
+-- Freeform board header ends -------------------
+
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+Slot #10h Virtual Adapter Size : 0033h
+
+(Hex-dump of ESCD data for this device follows)
+33 00 10 00 00 00 00 00 60 40 00 00 03 00 01 00 80 1C 00 01 00 C0 18 41 43 
+46 47 01 02 04 00 00 00 00 00 00 00 00 00 00 00 00 71 86 80 00 00 00 00 15 
+FB 
+
+EISA ID   : Not Defined
+Slot Info : 60h, 40h
+CFG Revn  : 0.0
+
+
+-- Function 0 -----------------------
+
+Length  : 0003h
+Fn info : 80h
+(This entry is disabled)
+
+-- Function 1 -----------------------
+
+Length  : 001Ch
+Fn info : C0h
+(This entry is disabled)
+(This entry is really freeform data)
+
+-- Last Function -- Checksum 15FBh --
+
+
+-- Freeform board header found for this device --
+
+    Signature  : ACFG
+    Version    : 2.1
+    DeviceType : PCI
+    PCI BUS#   : 00h
+    PCI Func#  : 00h
+    PCI Vendor : 8086h
+    PCI Device : 7100h
+
+-- Freeform board header ends -------------------
+
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+Slot #11h Virtual Adapter Size : 0050h
+
+(Hex-dump of ESCD data for this device follows)
+50 00 11 00 00 00 00 00 40 40 00 00 03 00 01 00 80 13 00 01 00 14 8E 00 0F 
+00 8F F0 01 80 F6 03 8F 70 01 00 76 03 24 00 01 00 C0 20 41 43 46 47 01 02 
+04 00 00 00 00 00 00 00 00 00 00 38 10 71 86 80 00 00 00 39 11 71 86 80 00 
+00 00 00 C7 F3 
+
+EISA ID   : Not Defined
+Slot Info : 40h, 40h
+CFG Revn  : 0.0
+
+
+-- Function 0 -----------------------
+
+Length  : 0003h
+Fn info : 80h
+(This entry is disabled)
+
+-- Function 1 -----------------------
+
+Length  : 0013h
+Fn info : 14h
+IRQ     : 14, Edge Triggered, Not Shared
+IRQ     : 15, Edge Triggered, Not Shared
+I/O     : 01F0h to 01FFh, Not Shared
+I/O     : 03F6h to 03F6h, Not Shared
+I/O     : 0170h to 017Fh, Not Shared
+I/O     : 0376h to 0376h, Not Shared
+
+-- Function 2 -----------------------
+
+Length  : 0024h
+Fn info : C0h
+(This entry is disabled)
+(This entry is really freeform data)
+
+-- Last Function -- Checksum C7F3h --
+
+
+-- Freeform board header found for this device --
+
+    Signature  : ACFG
+    Version    : 2.1
+    DeviceType : PCI
+    PCI BUS#   : 00h
+    PCI Func#  : 38h
+    PCI Vendor : 8086h
+    PCI Device : 7110h
+
+-- Freeform board header ends -------------------
+
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+Slot #12h Virtual Adapter Size : 0050h
+
+(Hex-dump of ESCD data for this device follows)
+50 00 12 00 00 00 00 00 60 40 00 00 20 00 01 00 96 99 00 00 0A 00 80 00 98 
+00 00 0C 00 20 00 19 0A 00 00 E0 04 00 6C 00 8B B0 03 1F C0 03 1C 00 01 00 
+C0 18 41 43 46 47 01 02 04 00 00 00 00 00 00 00 00 00 00 70 01 8A 33 53 00 
+00 00 00 3F F5 
+
+EISA ID   : Not Defined
+Slot Info : 60h, 40h
+CFG Revn  : 0.0
+
+
+-- Function 0 -----------------------
+
+Length  : 0020h
+Fn info : 96h
+(This entry is disabled)
+MEM     : 000A000h Length 128kb, RAM, Not Cached, Not Shared, 8-bit
+MEM     : 000C000h Length 32kb, ROM, Not Cached, Not Shared, 8-bit
+MEM     : E000000h Length 4kb, RAM, Not Cached, Not Shared, 32-bit
+IRQ     : 12, Level Triggered, Shared
+I/O     : 03B0h to 03BBh, Not Shared
+I/O     : 03C0h to 03DFh, Not Shared
+
+-- Function 1 -----------------------
+
+Length  : 001Ch
+Fn info : C0h
+(This entry is disabled)
+(This entry is really freeform data)
+
+-- Last Function -- Checksum 3FF5h --
+
+
+-- Freeform board header found for this device --
+
+    Signature  : ACFG
+    Version    : 2.1
+    DeviceType : PCI
+    PCI BUS#   : 00h
+    PCI Func#  : 70h
+    PCI Vendor : 5333h
+    PCI Device : 8A01h
+
+-- Freeform board header ends -------------------
+
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+Slot #00h System Board Resources Size : 00EDh
+
+(Hex-dump of ESCD data for this device follows)
+ED 00 00 00 00 00 00 00 40 40 00 00 0B 00 01 00 14 02 00 81 20 00 01 A0 00 
+17 00 01 00 18 04 00 8F 00 00 82 81 00 80 87 00 82 89 00 82 8F 00 1F C0 00 
+08 00 01 00 14 00 00 03 40 00 08 00 01 00 14 08 00 01 70 00 0B 00 01 00 14 
+01 00 80 60 00 00 64 00 06 00 01 00 10 00 61 00 08 00 01 00 14 0D 00 0F F0 
+00 18 00 01 00 02 98 08 00 00 00 80 02 98 08 00 FE FF 80 00 18 08 00 10 00 
+00 BC 1F 00 01 00 02 98 08 00 0F 00 10 00 98 08 40 0F 00 10 00 98 08 80 0F 
+00 10 00 18 08 C0 0F 00 10 00 15 00 01 00 10 81 D0 04 87 F8 0C 8F 80 04 9F 
+00 40 9F 20 40 1F 00 50 06 00 01 00 10 07 08 02 08 00 01 00 14 04 00 07 F8 
+03 0A 00 01 00 1C 06 00 02 00 03 F2 03 08 00 01 00 14 07 00 07 78 03 08 00 
+01 00 14 03 00 07 F8 02 00 00 68 DF 
+
+EISA ID   : Not Defined
+Slot Info : 40h, 40h
+CFG Revn  : 0.0
+
+
+-- Function 0 -----------------------
+
+Length  : 000Bh
+Fn info : 14h
+IRQ     : 2, Edge Triggered, Not Shared
+I/O     : 0020h to 0021h, Not Shared
+I/O     : 00A0h to 00A1h, Not Shared
+
+-- Function 1 -----------------------
+
+Length  : 0017h
+Fn info : 18h
+DMA     : 4, Not Shared, ISA Timing, 8-bit
+I/O     : 0000h to 000Fh, Not Shared
+I/O     : 0081h to 0083h, Not Shared
+I/O     : 0087h to 0087h, Not Shared
+I/O     : 0089h to 008Bh, Not Shared
+I/O     : 008Fh to 0091h, Not Shared
+I/O     : 00C0h to 00DFh, Not Shared
+
+-- Function 2 -----------------------
+
+Length  : 0008h
+Fn info : 14h
+IRQ     : 0, Edge Triggered, Not Shared
+I/O     : 0040h to 0043h, Not Shared
+
+-- Function 3 -----------------------
+
+Length  : 0008h
+Fn info : 14h
+IRQ     : 8, Edge Triggered, Not Shared
+I/O     : 0070h to 0071h, Not Shared
+
+-- Function 4 -----------------------
+
+Length  : 000Bh
+Fn info : 14h
+IRQ     : 1, Edge Triggered, Not Shared
+I/O     : 0060h to 0060h, Not Shared
+I/O     : 0064h to 0064h, Not Shared
+
+-- Function 5 -----------------------
+
+Length  : 0006h
+Fn info : 10h
+I/O     : 0061h to 0061h, Not Shared
+
+-- Function 6 -----------------------
+
+Length  : 0008h
+Fn info : 14h
+IRQ     : 13, Edge Triggered, Not Shared
+I/O     : 00F0h to 00FFh, Not Shared
+
+-- Function 7 -----------------------
+
+Length  : 0018h
+Fn info : 02h
+MEM     : 0000000h Length 640kb, ROM, Not Cached, Not Shared, 8-bit
+MEM     : FFFE000h Length 128kb, ROM, Not Cached, Not Shared, 8-bit
+MEM     : 0010000h Length 48128kb, ROM, Not Cached, Not Shared, 8-bit
+
+-- Function 8 -----------------------
+
+Length  : 001Fh
+Fn info : 02h
+MEM     : 000F000h Length 16kb, ROM, Not Cached, Not Shared, 8-bit
+MEM     : 000F400h Length 16kb, ROM, Not Cached, Not Shared, 8-bit
+MEM     : 000F800h Length 16kb, ROM, Not Cached, Not Shared, 8-bit
+MEM     : 000FC00h Length 16kb, ROM, Not Cached, Not Shared, 8-bit
+
+-- Function 9 -----------------------
+
+Length  : 0015h
+Fn info : 10h
+I/O     : 04D0h to 04D1h, Not Shared
+I/O     : 0CF8h to 0CFFh, Not Shared
+I/O     : 0480h to 048Fh, Not Shared
+I/O     : 4000h to 401Fh, Not Shared
+I/O     : 4020h to 403Fh, Not Shared
+I/O     : 5000h to 501Fh, Not Shared
+
+-- Function 10 -----------------------
+
+Length  : 0006h
+Fn info : 10h
+I/O     : 0208h to 020Fh, Not Shared
+
+-- Function 11 -----------------------
+
+Length  : 0008h
+Fn info : 14h
+IRQ     : 4, Edge Triggered, Not Shared
+I/O     : 03F8h to 03FFh, Not Shared
+
+-- Function 12 -----------------------
+
+Length  : 000Ah
+Fn info : 1Ch
+IRQ     : 6, Edge Triggered, Not Shared
+DMA     : 2, Not Shared, ISA Timing, 8-bit
+I/O     : 03F2h to 03F5h, Not Shared
+
+-- Function 13 -----------------------
+
+Length  : 0008h
+Fn info : 14h
+IRQ     : 7, Edge Triggered, Not Shared
+I/O     : 0378h to 037Fh, Not Shared
+
+-- Function 14 -----------------------
+
+Length  : 0008h
+Fn info : 14h
+IRQ     : 3, Edge Triggered, Not Shared
+I/O     : 02F8h to 02FFh, Not Shared
+
+-- Last Function -- Checksum 68DFh --
+
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+Slot #0Fh EISA, PnPISA or ISA Adapter Size : 0029h
+
+(Hex-dump of ESCD data for this device follows)
+29 00 0F 00 41 D0 FF FF 40 04 00 00 0F 00 01 00 1C 05 00 81 00 05 00 8F 20 
+02 01 30 03 06 00 01 00 10 07 00 02 00 00 B9 FA 
+
+EISA ID   : PNPFFFF - Non-PnP Device(s) Resource(s) (Added by Windows 95)
+Slot Info : 40h, 04h
+CFG Revn  : 0.0
+
+
+-- Function 0 -----------------------
+
+Length  : 000Fh
+Fn info : 1Ch
+IRQ     : 5, Edge Triggered, Not Shared
+DMA     : 1, Not Shared, ISA Timing, 8-bit
+DMA     : 5, Not Shared, ISA Timing, 8-bit
+I/O     : 0220h to 022Fh, Not Shared
+I/O     : 0330h to 0331h, Not Shared
+
+-- Function 1 -----------------------
+
+Length  : 0006h
+Fn info : 10h
+I/O     : 0200h to 0207h, Not Shared
+
+-- Last Function -- Checksum B9FAh --
+
+------------------------------------------------------------------------------
+
+
